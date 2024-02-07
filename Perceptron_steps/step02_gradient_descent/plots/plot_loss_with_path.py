@@ -42,9 +42,6 @@ def train_with_history(X, Y, iterations, lr, precision, initial_w, initial_b):
 
 
 
-
-
-
 data_loader = DataLoader("../../../data/sales.txt")
 X = data_loader.get_X()
 Y = data_loader.get_Y()

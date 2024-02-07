@@ -40,6 +40,6 @@ def train(X, Y, iterations, lr):
 #w = train(X, Y, iterations=10000, lr=0.01)
 #print("\nw=%.3f" % w)
 
-# Predict the number of pizzas
+# Predict the number of sales
 #print("Prediction: x=%d => y=%.2f" % (20, predict(20, w)))
 # END:main

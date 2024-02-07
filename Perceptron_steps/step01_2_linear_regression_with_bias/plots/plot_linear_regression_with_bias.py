@@ -13,11 +13,9 @@ sns.set()
 plt.plot(X, Y, "bo")
 plt.xticks(fontsize=15)
 plt.yticks(fontsize=15)
-plt.xlabel("Reservations", fontsize=30)
-plt.ylabel("Pizzas", fontsize=30)
+plt.xlabel("clicks", fontsize=30)
+plt.ylabel("sales", fontsize=30)
 x_edge, y_edge = 50, 50
 plt.axis([0, x_edge, 0, y_edge])
-# START_HIGHLIGHT
 plt.plot([0, x_edge], [b, linear_regression_with_bias.predict(x_edge, w, b)], linewidth=1.0, color="g")
-# END_HIGHLIGHT
 plt.show()

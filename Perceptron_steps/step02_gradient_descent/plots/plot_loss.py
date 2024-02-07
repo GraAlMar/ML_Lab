@@ -8,10 +8,8 @@ def predict(X, w, b):
     return X * w + b
 
 
-# START:loss
 def loss(X, Y, w, b):
     return np.average((predict(X, w, b) - Y) ** 2)
-# END:loss
 
 
 # Load data
@@ -19,7 +17,8 @@ data_loader = DataLoader("../../../data/sales.txt")
 X = data_loader.get_X()
 Y = data_loader.get_Y()
 
-sns.set()  # Activate Seaborn
+# Activate Seaborn
+sns.set()
 
 # Compute losses for w ranging from -1 to 4
 weights = np.linspace(-1.0, 4.0, 200)

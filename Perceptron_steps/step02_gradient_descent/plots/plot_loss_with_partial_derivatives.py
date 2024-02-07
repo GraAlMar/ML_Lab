@@ -41,8 +41,6 @@ def train_with_history(X, Y, iterations, lr, precision, initial_w, initial_b):
     raise Exception("Couldn't converge within %d iterations" % iterations)
 
 
-# Your functions here...
-
 # Load data, train model
 data_loader = DataLoader("../../../data/sales.txt")
 X = data_loader.get_X()
@@ -80,10 +78,9 @@ ax.plot_surface(W, B, L, cmap=cm.Blues, linewidth=0, antialiased=True)
 
 # Trace the partial derivative "slices"
 ax.plot(weights, [history_b[0] for w in weights],
-         [loss(X, Y, w, history_b[0]) for w in weights], color="r")
+        [loss(X, Y, w, history_b[0]) for w in weights], color="r")
 ax.plot([history_w[0] for b in biases], biases,
-         [loss(X, Y, history_w[0], b) for b in biases], color="g")
+        [loss(X, Y, history_w[0], b) for b in biases], color="g")
 
 # Display plot
 plt.show()
-
