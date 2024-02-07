@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 from logic.dataloader import DataLoader
-from steps.step01_1_linear_regression.functions import linear_regression
+from Perceptron_steps.step01_1_linear_regression.functions import linear_regression
 
 
 data_loader = DataLoader("../../../data/sales.txt")
